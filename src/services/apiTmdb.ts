@@ -1,6 +1,6 @@
 import http from './axios';
 
-const API_KEY = 'sua chave key tmdb'; 
+const API_KEY = 'sua chave key tmbd'; 
 
 const basicFetch = async (endpoint: string) => {
   const response = await http.get(`${endpoint}`);

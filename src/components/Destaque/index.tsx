@@ -40,7 +40,7 @@ export function Destaque({ filmRandom }: TypeFilmRandom) {
           <Pontuacao>
             <Pontos>{filmRandom.vote_average} pontos</Pontos>
             <p>{filmRandom.first_air_date ? fisteDate?.getFullYear() : ''}</p>
-            <p>{filmRandom.number_of_seasons} temporadas</p>
+            <p>{filmRandom.number_of_seasons === 1 ? `${filmRandom.number_of_seasons} temporada`: `${filmRandom.number_of_seasons} temporadas` }</p>
           </Pontuacao>
 
           <Description>{filmRandom.overview}</Description>
